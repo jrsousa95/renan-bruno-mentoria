@@ -1,0 +1,92 @@
+import React, { useEffect, useState } from "react";
+import { ArrowDown } from "lucide-react";
+
+const HeroSection = () => {
+  const [offsetY, setOffsetY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => setOffsetY(window.scrollY);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  return (
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      {/* Background with parallax effect */}
+      <div
+        className="absolute inset-0 bg-gradient-to-br from-brand-blue-900 via-brand-blue-800 to-brand-gray-900"
+        style={{ transform: `translateY(${offsetY * 0.5}px)` }}
+      >
+        <div className="absolute inset-0 bg-black/30"></div>
+        <div
+          className="absolute inset-0 opacity-10"
+          style={{
+            backgroundImage: `url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Cpath d='m0 40l40-40h-40v40z'/%3E%3C/g%3E%3C/svg%3E")`,
+          }}
+        ></div>
+      </div>
+
+      {/* Content */}
+      <div className="container mx-auto px-4 text-center text-white relative z-10">
+        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 animate-fade-in">
+          Transforme suas <span className="text-brand-blue-400">Vendas</span>
+        </h1>
+        <h2
+          className="text-xl md:text-2xl lg:text-3xl font-semibold mb-4 animate-fade-in"
+          style={{ animationDelay: "0.2s" }}
+        >
+          Mentoria Exclusiva para Alavancar seu Negócio
+        </h2>
+        <p
+          className="text-lg md:text-xl text-gray-300 mb-8 max-w-3xl mx-auto animate-fade-in"
+          style={{ animationDelay: "0.4s" }}
+        >
+          Acompanhe aulas semanais, participe de debates ao vivo e receba
+          feedback direto de especialistas em vendas.
+        </p>
+
+        <div
+          className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in"
+          style={{ animationDelay: "0.6s" }}
+        >
+          <button
+            onClick={() => scrollToSection("cta")}
+            className="group bg-brand-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-brand-blue-700 transform hover:scale-105 transition-all duration-300 shadow-xl relative overflow-hidden"
+          >
+            <span className="relative z-10">Quero Me Inscrever</span>
+            <div className="absolute inset-0 bg-white/20 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
+          </button>
+
+          <button
+            onClick={() => scrollToSection("sobre")}
+            className="text-white border-2 border-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-brand-blue-600 transition-all duration-300"
+          >
+            Saiba Mais
+          </button>
+        </div>
+      </div>
+
+      {/* Scroll indicator */}
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <ArrowDown className="w-6 h-6 text-white/70" />
+      </div>
+
+      {/* Fixed CTA button */}
+      <button
+        onClick={() => scrollToSection("cta")}
+        className="fixed bottom-6 right-6 bg-brand-blue-600 text-white px-6 py-3 rounded-full shadow-lg hover:bg-brand-blue-700 transform hover:scale-110 transition-all duration-300 z-40 font-semibold"
+      >
+        Quero Me Inscrever
+      </button>
+    </section>
+  );
+};
+
+export default HeroSection;
