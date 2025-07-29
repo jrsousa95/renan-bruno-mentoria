@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { CheckCircle, Play, Clock, Users } from "lucide-react";
 
-const AboutSection = () => {
+const AboutMe = () => {
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
 
@@ -34,15 +34,15 @@ const AboutSection = () => {
   const features = [
     {
       icon: Clock,
-      title: "Metodologia comprovada",
+      title: "+10 anos de experiência",
       description:
-        "Técnicas que realmente funcionam, com base em anos de experiência no mercado.",
+        "Renan Bruno tem mais de 10 anos de experiência em vendas de planos de saúde.",
     },
 
     {
       icon: CheckCircle,
-      title: "Expertise de mercado ",
-      description: "Aprenda com quem já formou dezenas de campeões em vendas.",
+      title: "Prêmios conquistados",
+      description: "Mais de 10 prêmios em vendas e atendimento ao cliente.",
     },
   ];
 
@@ -57,12 +57,18 @@ const AboutSection = () => {
             }`}
           >
             <h2 className="text-4xl md:text-5xl font-bold text-brand-gray-800">
-              Sobre a <span className="text-brand-blue-600">Mentoria</span>
+              Quem é <span className="text-brand-blue-600">Renan Bruno?</span>
             </h2>
             <p className="text-xl text-brand-gray-600 leading-relaxed">
-              Nossa mentoria foi desenvolvida para ajudar corretores de planos
-              de saúde a se tornarem especialistas em vendas, utilizando
-              técnicas comprovadas e uma abordagem prática.
+              Renan Bruno é especialista em vendas de planos de saúde, com anos
+              de experiência e dezenas de prêmios conquistados. Sua mentoria já
+              transformou a carreira de centenas de vendedores.
+            </p>
+            <p className="text-xl text-brand-gray-600 leading-relaxed">
+              Com uma abordagem prática e resultados comprovados, Renan
+              desenvolveu um método único que combina técnicas de vendas,
+              psicologia do cliente e estratégias de mercado para maximizar o
+              desempenho dos representantes comerciais.
             </p>
 
             <div className="grid sm:grid-cols-2 gap-6">
@@ -135,4 +141,4 @@ const AboutSection = () => {
   );
 };
 
-export default AboutSection;
+export default AboutMe;

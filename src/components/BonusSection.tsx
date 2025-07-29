@@ -5,28 +5,16 @@ const BonusSection = () => {
   const bonuses = [
     {
       icon: BookOpen,
-      title: "E-book de Scripts de Vendas",
-      description: "100+ scripts testados para diferentes situações de venda",
-      value: "R$ 297",
-    },
-    {
-      icon: MessageCircle,
-      title: "Checklist de Prospecção",
-      description: "Guia passo-a-passo para encontrar clientes ideais",
-      value: "R$ 197",
-    },
-    {
-      icon: Users,
-      title: "Grupo VIP no WhatsApp",
-      description: "Acesso exclusivo à comunidade de alunos e mentores",
-      value: "R$ 497",
+      title: "PDF com ferramentas práticas",
+      description: "Aprenda com o guia completo de ferramentas práticas",
+      value: "R$ 149",
     },
   ];
 
   return (
     <section className="py-20 bg-gradient-to-br from-brand-blue-900 to-brand-gray-900 text-white">
       <div className="container mx-auto px-4">
-        <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+        <div className="grid lg:grid-cols-1 gap-12 max-w-6xl mx-auto">
           {/* Bonuses */}
           <div>
             <div className="flex items-center mb-8">
@@ -66,7 +54,7 @@ const BonusSection = () => {
                 <div className="text-sm text-yellow-400 font-semibold mb-1">
                   VALOR TOTAL DOS BÔNUS
                 </div>
-                <div className="text-3xl font-bold text-yellow-400">R$ 991</div>
+                <div className="text-3xl font-bold text-yellow-400">R$ 149</div>
                 <div className="text-sm text-gray-300 mt-1">
                   Grátis para você!
                 </div>
@@ -75,7 +63,7 @@ const BonusSection = () => {
           </div>
 
           {/* Guarantee */}
-          <div className="flex items-center justify-center">
+          {/* <div className="flex items-center justify-center">
             <div className="text-center">
               <div className="relative inline-block">
                 <div className="w-48 h-48 bg-green-500 rounded-full flex items-center justify-center animate-pulse-soft">
@@ -103,7 +91,7 @@ const BonusSection = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

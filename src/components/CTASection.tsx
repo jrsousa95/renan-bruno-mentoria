@@ -61,12 +61,12 @@ const CTASection = () => {
                 OFERTA ESPECIAL
               </div>
               <div className="text-sm text-brand-blue-200 line-through mb-1">
-                De R$ 4.997
+                De R$ 295
               </div>
               <div className="text-4xl font-bold text-yellow-400 mb-2">
-                R$ 2.497
+                R$ 197
               </div>
-              <div className="text-brand-blue-200 mb-4">ou 12x de R$ 247</div>
+              <div className="text-brand-blue-200 mb-4">ou 12x de R$ 20,37</div>
               <div className="bg-yellow-400 text-brand-gray-900 px-4 py-2 rounded-lg font-semibold text-sm">
                 50% DE DESCONTO
               </div>
@@ -81,7 +81,9 @@ const CTASection = () => {
           >
             <button className="group relative bg-yellow-400 text-brand-gray-900 px-12 py-6 rounded-xl text-xl font-bold hover:bg-yellow-300 transform hover:scale-105 transition-all duration-300 shadow-2xl overflow-hidden">
               <span className="relative z-10">
-                QUERO TRANSFORMAR MINHAS VENDAS
+                <a target="_blank" href="https://pay.kiwify.com.br/tt552DZ">
+                  QUERO TRANSFORMAR MINHAS VENDAS
+                </a>
               </span>
 
               {/* Wave effect */}
@@ -117,10 +119,6 @@ const CTASection = () => {
             <div className="flex items-center space-x-2">
               <div className="w-3 h-3 bg-green-400 rounded-full"></div>
               <span>Pagamento Seguro</span>
-            </div>
-            <div className="flex items-center space-x-2">
-              <div className="w-3 h-3 bg-green-400 rounded-full"></div>
-              <span>Garantia de 30 Dias</span>
             </div>
             <div className="flex items-center space-x-2">
               <div className="w-3 h-3 bg-green-400 rounded-full"></div>

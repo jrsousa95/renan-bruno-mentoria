@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import { TrendingUp, Users, Award } from "lucide-react";
+import { TrendingUp, Brain, Award } from "lucide-react";
 
 const BenefitsSection = () => {
   const [visibleCards, setVisibleCards] = useState<boolean[]>([
@@ -43,10 +43,10 @@ const BenefitsSection = () => {
   const benefits = [
     {
       icon: TrendingUp,
-      title: "+50% de aumento",
+      title: "Resultados comprovados",
       subtitle: "no faturamento",
       description:
-        "Nossos alunos veem resultados reais em até 60 dias com nossas técnicas comprovadas.",
+        "Nossos alunos veem resultados reais com nossas técnicas comprovadas.",
       color: "from-green-500 to-emerald-600",
     },
     {
@@ -54,15 +54,14 @@ const BenefitsSection = () => {
       title: "Técnicas avançadas",
       subtitle: "de negociação",
       description:
-        "Aprenda estratégias usadas pelos melhores vendedores do mercado mundial.",
+        "Aprenda estratégias usadas pelos melhores vendedores do mercado.",
       color: "from-brand-blue-500 to-brand-blue-600",
     },
     {
-      icon: Users,
-      title: "Networking exclusivo",
-      subtitle: "com empreendedores",
-      description:
-        "Conecte-se com uma comunidade de alto nível e expanda seus negócios.",
+      icon: Brain,
+      title: "Expertise de alto nível",
+      subtitle: "de vendas",
+      description: "Mentor com anos de experiência e resultados consistentes.",
       color: "from-purple-500 to-indigo-600",
     },
   ];

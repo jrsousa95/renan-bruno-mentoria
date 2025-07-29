@@ -1,19 +1,21 @@
-import React from "react";
 import {
   Facebook,
   Instagram,
   Linkedin,
-  Youtube,
   Mail,
   Phone,
+  Youtube,
 } from "lucide-react";
+
+import logoFooter from "@/assets/logo-footer.png";
 
 const Footer = () => {
   const socialLinks = [
-    { icon: Facebook, href: "#", label: "Facebook" },
-    { icon: Instagram, href: "#", label: "Instagram" },
-    { icon: Linkedin, href: "#", label: "LinkedIn" },
-    { icon: Youtube, href: "#", label: "YouTube" },
+    {
+      icon: Instagram,
+      href: "https://www.instagram.com/renanbruno.vendas?igsh=MWR0eGlxOWwzMTdpaA==",
+      label: "Instagram",
+    },
   ];
 
   return (
@@ -22,12 +24,19 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-8">
           {/* Logo and description */}
           <div className="md:col-span-2">
-            <div className="text-2xl font-bold text-brand-blue-400 mb-4">
-              Renan Bruno - Mentoria
+            <div className="flex items-center">
+              <img
+                src={logoFooter}
+                alt="Renan Bruno - Logo"
+                className="h-28 w-auto"
+              />
             </div>
             <p className="text-gray-400 leading-relaxed mb-6 max-w-md">
-              Transformamos empreendedores em especialistas em vendas através de
-              metodologias comprovadas e mentoria personalizada.
+              Acelere seus resultados na venda de planos de saúde com
+              estratégias comprovadas! Esse curso para alta performance em
+              vendas vai te guiar desde a abordagem até o fechamento, com
+              técnicas persuasivas, posicionamento estratégico e mentalidade
+              vencedora. Transforme seu desempenho e conquiste mais vendas!
             </p>
 
             {/* Social media */}
@@ -39,6 +48,7 @@ const Footer = () => {
                     key={index}
                     href={social.href}
                     aria-label={social.label}
+                    target="_blank"
                     className="w-10 h-10 bg-brand-gray-800 rounded-lg flex items-center justify-center hover:bg-brand-blue-600 transition-colors duration-300"
                   >
                     <Icon className="w-5 h-5" />
@@ -93,11 +103,13 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-brand-blue-400" />
-                <span className="text-gray-400">contato@salesboost.com</span>
+                <span className="text-gray-400">
+                  gerenciarenanbruno@gmail.com
+                </span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-brand-blue-400" />
-                <span className="text-gray-400">(11) 99999-9999</span>
+                <span className="text-gray-400">(85) 98555-0187</span>
               </div>
             </div>
           </div>

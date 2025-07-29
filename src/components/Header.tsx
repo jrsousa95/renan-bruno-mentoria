@@ -35,7 +35,7 @@ const Header = () => {
           <div className="flex items-center">
             <img
               src={isScrolled ? logoInverter : logo}
-              alt="Ferraz Santos Advogados"
+              alt="Renan Bruno - Logo"
               className="h-10 w-auto"
             />
           </div>
@@ -78,7 +78,7 @@ const Header = () => {
               onClick={() => scrollToSection("cta")}
               className="bg-brand-blue-600 text-white px-6 py-2 rounded-lg hover:bg-brand-blue-700 transform hover:scale-105 transition-all duration-300 shadow-lg"
             >
-              Inscrever-se
+              Comprar agora
             </button>
           </div>
 
@@ -130,7 +130,7 @@ const Header = () => {
               onClick={() => scrollToSection("cta")}
               className="block w-full bg-brand-blue-600 text-white px-6 py-2 rounded-lg hover:bg-brand-blue-700 transition-colors"
             >
-              Inscrever-se
+              Comprar agora
             </button>
           </div>
         </div>

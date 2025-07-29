@@ -1,4 +1,5 @@
 import React from "react";
+import logo from "@/assets/logo.png";
 
 const Loader = () => {
   return (
@@ -9,8 +10,8 @@ const Loader = () => {
           <div className="absolute inset-2 border-4 border-brand-blue-500 border-t-transparent rounded-full animate-spin"></div>
           <div className="absolute inset-4 bg-brand-blue-600 rounded-full"></div>
         </div>
-        <div className="text-white text-xl font-semibold">
-          Renan Bruno - Mentoria
+        <div className="flex items-center">
+          <img src={logo} alt="Renan Bruno - Logo" className="h-10 w-auto" />
         </div>
         <div className="text-brand-blue-300 text-sm mt-2">Carregando...</div>
       </div>

@@ -8,17 +8,12 @@ const FAQSection = () => {
     {
       question: "Quanto tempo dura a mentoria?",
       answer:
-        "A mentoria tem duração de 16 semanas, com aulas semanais ao vivo e acesso vitalício ao conteúdo gravado. Você terá tempo suficiente para absorver todo o conhecimento e aplicar as técnicas.",
+        "A mentoria tem duração de 3 meses, com aulas de conteúdo gravado. Você terá tempo suficiente para absorver todo o conhecimento e aplicar as técnicas.",
     },
     {
       question: "Preciso ter experiência prévia em vendas?",
       answer:
         "Não! Nossa mentoria é adequada tanto para iniciantes quanto para profissionais experientes. Começamos do básico e avançamos gradualmente para técnicas mais sofisticadas.",
-    },
-    {
-      question: "Como funcionam as aulas ao vivo?",
-      answer:
-        "As aulas acontecem todas as quartas-feiras às 20h via Zoom. Você pode participar ao vivo para fazer perguntas ou assistir a gravação posteriormente. Todas as aulas ficam disponíveis na plataforma.",
     },
     {
       question: "Posso aplicar as técnicas em qualquer segmento?",
@@ -28,24 +23,16 @@ const FAQSection = () => {
     {
       question: "Qual é o valor do investimento?",
       answer:
-        "O investimento é de R$ 2.497 à vista ou 12x de R$ 247. Considerando os resultados que nossos alunos obtêm, o ROI médio é de 500% nos primeiros 6 meses.",
-    },
-    {
-      question: "Existe suporte individual?",
-      answer:
-        "Sim! Além das aulas em grupo, você tem acesso ao grupo VIP no WhatsApp, sessões de feedback mensal e pode agendar consultoria individual (disponível nos planos premium).",
-    },
-    {
-      question: "E se eu não conseguir acompanhar o cronograma?",
-      answer:
-        "Sem problemas! Todo o conteúdo fica disponível vitaliciamente. Você pode estudar no seu ritmo e revisitar as aulas quantas vezes quiser. Também oferecemos suporte estendido.",
-    },
-    {
-      question: "A garantia é real?",
-      answer:
-        "Absolutamente! Você tem 30 dias para testar todo o conteúdo. Se não ficar satisfeito por qualquer motivo, devolvemos 100% do seu investimento, sem burocracias.",
+        "O investimento é de R$ 197. Considerando os resultados que nossos alunos obtêm, o ROI médio é de 500% nos primeiros 6 meses.",
     },
   ];
+
+  const whatsappNumber = "5585985550187";
+  const whatsappMessage =
+    "Olá! Gostaria de saber mais sobre a mentoria de vendas.";
+  const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
+    whatsappMessage
+  )}`;
 
   const toggleFAQ = (index: number) => {
     setOpenFAQ(openFAQ === index ? null : index);
@@ -108,7 +95,9 @@ const FAQSection = () => {
             Ainda tem dúvidas? Fale conosco!
           </p>
           <button className="bg-brand-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-brand-blue-700 transition-colors duration-300">
-            Entrar em Contato
+            <a target="_blank" href={whatsappUrl}>
+              Entrar em Contato
+            </a>
           </button>
         </div>
       </div>

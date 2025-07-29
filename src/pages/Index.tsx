@@ -10,6 +10,7 @@ import CTASection from "../components/CTASection";
 import FAQSection from "../components/FAQSection";
 import Footer from "../components/Footer";
 import Loader from "../components/Loader";
+import AboutMe from "@/components/AboutMe";
 
 const Index = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -31,6 +32,7 @@ const Index = () => {
     <div className="min-h-screen">
       <Header />
       <HeroSection />
+      <AboutMe />
       <BenefitsSection />
       <AboutSection />
       <TestimonialsCarousel />

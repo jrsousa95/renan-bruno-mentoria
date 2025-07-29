@@ -6,69 +6,39 @@ const ModulesSection = () => {
 
   const modules = [
     {
-      title: "Módulo 1: Fundamentos da Venda Consultiva",
-      duration: "4 semanas",
+      title: "Módulo 1: Introdução",
+      lessons: 3,
+      description:
+        "Aprenda os fundamentos essenciais para se tornar um corretor de planos de saúde.",
+      topics: [
+        "Primeiros passos",
+        "Trajetória",
+        "O mercado de planos de saúde",
+      ],
+    },
+    {
+      title: "Módulo 2: O perfil do representante de sucesso",
+      lessons: 3,
+      description:
+        "Desenvolva as habilidades e mentalidade necessárias para se destacar no mercado.",
+      topics: [
+        "Perfil do representante de sucesso",
+        "Seja intencional",
+        "Experiência do cliente",
+      ],
+    },
+    {
+      title: "Módulo 3: Táticas de venda",
+      lessons: 2,
+      description:
+        "Aprenda técnicas avançadas de vendas e como superar objeções comuns.",
+      topics: ["Táticas de vendas e quebra de objeções", "Vitrine Digital"],
+    },
+    {
+      title: "Módulo 4: Encerramento",
       lessons: 8,
-      description:
-        "Aprenda os princípios básicos da venda consultiva e como criar relacionamentos duradouros com seus clientes.",
-      topics: [
-        "Mindset do vendedor de sucesso",
-        "Técnicas de rapport e conexão",
-        "Escuta ativa e questionamento estratégico",
-        "Identificação de necessidades reais",
-      ],
-    },
-    {
-      title: "Módulo 2: Prospecção e Qualificação Avançada",
-      duration: "3 semanas",
-      lessons: 6,
-      description:
-        "Domine as estratégias mais eficazes para encontrar e qualificar leads de alta qualidade.",
-      topics: [
-        "Técnicas de cold calling modernas",
-        "LinkedIn para vendas B2B",
-        "Qualificação BANT e MEDDIC",
-        "Follow-up estratégico",
-      ],
-    },
-    {
-      title: "Módulo 3: Apresentação e Demonstração",
-      duration: "3 semanas",
-      lessons: 6,
-      description:
-        "Construa apresentações impactantes que convertem prospects em clientes.",
-      topics: [
-        "Storytelling para vendas",
-        "Demonstrações que vendem",
-        "Tratamento de objeções",
-        "Criação de urgência",
-      ],
-    },
-    {
-      title: "Módulo 4: Negociação e Fechamento",
-      duration: "4 semanas",
-      lessons: 8,
-      description:
-        "Aprenda técnicas avançadas de negociação e como fechar vendas de alto valor.",
-      topics: [
-        "Psicologia da negociação",
-        "Técnicas de fechamento",
-        "Negociação win-win",
-        "Upsell e cross-sell",
-      ],
-    },
-    {
-      title: "Módulo 5: Gestão de Pipeline e CRM",
-      duration: "2 semanas",
-      lessons: 4,
-      description:
-        "Organize e gerencie seu processo de vendas para maximizar resultados.",
-      topics: [
-        "Configuração de CRM",
-        "Métricas e KPIs de vendas",
-        "Automação de processos",
-        "Análise de performance",
-      ],
+      description: "Encerramento do curso.",
+      topics: ["Encerramento"],
     },
   ];
 
@@ -84,8 +54,8 @@ const ModulesSection = () => {
             Módulos do <span className="text-brand-blue-600">Curso</span>
           </h2>
           <p className="text-xl text-brand-gray-600 max-w-2xl mx-auto">
-            Um programa completo e estruturado para transformar você em um
-            especialista em vendas
+            Descubra os módulos do curso que vão transformar sua carreira como
+            corretor de planos de saúde.
           </p>
         </div>
 
@@ -105,10 +75,6 @@ const ModulesSection = () => {
                     {module.title}
                   </h3>
                   <div className="flex items-center space-x-6 text-brand-gray-600">
-                    <div className="flex items-center space-x-2">
-                      <Clock className="w-4 h-4" />
-                      <span className="text-sm">{module.duration}</span>
-                    </div>
                     <div className="flex items-center space-x-2">
                       <PlayCircle className="w-4 h-4" />
                       <span className="text-sm">{module.lessons} aulas</span>
@@ -155,20 +121,6 @@ const ModulesSection = () => {
               </div>
             </div>
           ))}
-        </div>
-
-        <div className="text-center mt-12">
-          <div className="inline-flex items-center space-x-4 bg-brand-blue-50 px-6 py-4 rounded-xl">
-            <Award className="w-8 h-8 text-brand-blue-600" />
-            <div className="text-left">
-              <div className="font-semibold text-brand-gray-800">
-                Certificado de Conclusão
-              </div>
-              <div className="text-brand-gray-600 text-sm">
-                Reconhecido pelo mercado
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
