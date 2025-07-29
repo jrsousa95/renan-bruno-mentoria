@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+import logo from "@/assets/logo.png";
+import logoInverter from "@/assets/logo-inverter.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -30,8 +32,12 @@ const Header = () => {
     >
       <nav className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <div className="text-2xl font-bold text-brand-blue-600">
-            Renan Bruno - Mentoria
+          <div className="flex items-center">
+            <img
+              src={isScrolled ? logoInverter : logo}
+              alt="Ferraz Santos Advogados"
+              className="h-10 w-auto"
+            />
           </div>
 
           {/* Desktop Menu */}
