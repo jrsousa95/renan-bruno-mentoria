@@ -8,7 +8,7 @@ const CTASection = () => {
     { icon: Users, value: "100+", label: "Alunos Transformados" },
     { icon: Star, value: "4.9/5", label: "Avaliação Média" },
     { icon: TrendingUp, value: "+65%", label: "Aumento Médio Vendas" },
-    { icon: Clock, value: "16", label: "Semanas de Conteúdo" },
+    { icon: Clock, value: "3", label: "Meses de acesso" },
   ];
 
   return (
