@@ -6,48 +6,21 @@ const TestimonialsCarousel = () => {
 
   const testimonials = [
     {
-      name: "Carlos Mendes",
+      name: "Natan Sousa",
       position: "CEO, TechStart",
       image:
-        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300&q=80",
+        "https://aws-assets.kiwify.com.br/cdn-cgi/image/fit=scale-down,width=160/rLizmogKmA23NrM/img_builder_4b0eec82-8e12-49d5-a10a-3a998fa757c3_5f62298e6576425f8f95654677205195.png",
       quote:
-        "Em 3 meses consegui aumentar meu faturamento em 70%. As técnicas ensinadas realmente funcionam!",
+        "Comecei no mercado de planos de saúde sem nenhuma pretensão, mas com as estratégias da mentoria, vi que eu poderia alcançar resultados que eu nem imaginava!",
       rating: 5,
     },
     {
-      name: "Ana Silva",
+      name: "Átila Camelo",
       position: "Fundadora, Marketing Pro",
       image:
-        "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300&q=80",
+        "https://aws-assets.kiwify.com.br/cdn-cgi/image/fit=scale-down,width=160/rLizmogKmA23NrM/img_builder_31cb031d-7a5b-47f5-9643-58a6dbdfb2a3_3b79c69797c441f9a9c755bb78286669.png",
       quote:
-        "A mentoria mudou completamente minha abordagem de vendas. Agora fecho negócios que antes pareciam impossíveis.",
-      rating: 5,
-    },
-    {
-      name: "Roberto Santos",
-      position: "Diretor Comercial",
-      image:
-        "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300&q=80",
-      quote:
-        "Excelente investimento! O ROI foi de mais de 500% no primeiro semestre após aplicar as estratégias.",
-      rating: 5,
-    },
-    {
-      name: "Mariana Costa",
-      position: "Empreendedora Digital",
-      image:
-        "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300&q=80",
-      quote:
-        "O networking da comunidade é incrível. Fiz parcerias que multiplicaram meus resultados.",
-      rating: 5,
-    },
-    {
-      name: "João Oliveira",
-      position: "Consultor de Vendas",
-      image:
-        "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300&q=80",
-      quote:
-        "Aprendi técnicas de negociação que uso até hoje. Minha taxa de conversão dobrou!",
+        "Todo o suporte que eu tive na mentoria foi essencial para desenvolver minhas habilidades, técnicas de vendas e melhorei 100% a minha abordagem com os clientes. O resultado foi só uma consequência de tudo que eu pude aplicar nos meus atendimentos.",
       rating: 5,
     },
   ];
@@ -58,6 +31,7 @@ const TestimonialsCarousel = () => {
     }, 5000);
 
     return () => clearInterval(interval);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const nextSlide = () => {
@@ -128,9 +102,9 @@ const TestimonialsCarousel = () => {
                           <div className="font-bold text-brand-gray-800 text-lg">
                             {testimonial.name}
                           </div>
-                          <div className="text-brand-gray-600">
+                          {/* <div className="text-brand-gray-600">
                             {testimonial.position}
-                          </div>
+                          </div> */}
                         </div>
                       </div>
                     </div>
