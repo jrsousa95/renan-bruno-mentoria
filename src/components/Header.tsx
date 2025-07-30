@@ -98,9 +98,17 @@ const Header = () => {
             className="md:hidden p-2"
           >
             {isMenuOpen ? (
-              <X className="w-6 h-6 text-brand-gray-700 transform rotate-0 transition-transform duration-300" />
+              <X
+                className={`w-6 h-6 ${
+                  isScrolled ? "text-brand-gray-700" : "text-white"
+                } transform rotate-0 transition-transform duration-300`}
+              />
             ) : (
-              <Menu className="w-6 h-6 text-brand-gray-700 transform rotate-0 transition-transform duration-300" />
+              <Menu
+                className={`w-6 h-6 ${
+                  isScrolled ? "text-brand-gray-700" : "text-white"
+                } transform rotate-0 transition-transform duration-300`}
+              />
             )}
           </button>
         </div>
@@ -114,31 +122,41 @@ const Header = () => {
           <div className="py-4 space-y-4">
             <button
               onClick={() => scrollToSection("about-mentoring")}
-              className="block w-full text-left text-brand-gray-700 hover:text-brand-blue-600 transition-colors"
+              className={`block w-full text-left ${
+                isScrolled ? "text-brand-gray-700" : "text-white"
+              } hover:text-brand-blue-600 transition-colors`}
             >
               Sobre a Mentoria
             </button>
             <button
               onClick={() => scrollToSection("about-me")}
-              className="block w-full text-left text-brand-gray-700 hover:text-brand-blue-600 transition-colors"
+              className={`block w-full text-left ${
+                isScrolled ? "text-brand-gray-700" : "text-white"
+              } hover:text-brand-blue-600 transition-colors`}
             >
               Quem é Renan Bruno?
             </button>
             <button
               onClick={() => scrollToSection("beneficios")}
-              className="block w-full text-left text-brand-gray-700 hover:text-brand-blue-600 transition-colors"
+              className={`block w-full text-left ${
+                isScrolled ? "text-brand-gray-700" : "text-white"
+              } hover:text-brand-blue-600 transition-colors`}
             >
               Benefícios
             </button>
             <button
               onClick={() => scrollToSection("modulos")}
-              className="block w-full text-left text-brand-gray-700 hover:text-brand-blue-600 transition-colors"
+              className={`block w-full text-left ${
+                isScrolled ? "text-brand-gray-700" : "text-white"
+              } hover:text-brand-blue-600 transition-colors`}
             >
               Módulos
             </button>
             <button
               onClick={() => scrollToSection("depoimentos")}
-              className="block w-full text-left text-brand-gray-700 hover:text-brand-blue-600 transition-colors"
+              className={`block w-full text-left ${
+                isScrolled ? "text-brand-gray-700" : "text-white"
+              } hover:text-brand-blue-600 transition-colors`}
             >
               Depoimentos
             </button>
