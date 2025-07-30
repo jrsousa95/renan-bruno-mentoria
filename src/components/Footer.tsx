@@ -64,7 +64,7 @@ const Footer = () => {
             <ul className="space-y-2">
               <li>
                 <a
-                  href="#sobre"
+                  href="#about"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
                   Sobre a Mentoria
@@ -72,7 +72,15 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="#beneficios"
+                  href="#about-me"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  Quem é Renan Bruno?
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#benefits"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
                   Benefícios
@@ -80,7 +88,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="#modulos"
+                  href="#modules"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
                   Módulos
@@ -88,7 +96,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="#depoimentos"
+                  href="#testimonials"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
                   Depoimentos

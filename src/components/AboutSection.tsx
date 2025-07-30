@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { CheckCircle, Play, Clock, Users } from "lucide-react";
+import mentoringImage from "@/assets/mentoring.jpg";
 
 const AboutSection = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -47,7 +48,7 @@ const AboutSection = () => {
   ];
 
   return (
-    <section id="sobre" ref={sectionRef} className="py-20 bg-white">
+    <section id="about-mentoring" ref={sectionRef} className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
           {/* Content */}
@@ -111,7 +112,7 @@ const AboutSection = () => {
           >
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <img
-                src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                src={mentoringImage}
                 alt="Mentoria de vendas online"
                 className="w-full h-96 object-cover"
               />
@@ -125,7 +126,7 @@ const AboutSection = () => {
             </div>
 
             <div className="absolute -bottom-4 -left-4 bg-white rounded-xl p-4 shadow-lg">
-              <div className="text-2xl font-bold text-green-600">+5.000</div>
+              <div className="text-2xl font-bold text-green-600">+100</div>
               <div className="text-sm text-brand-gray-600">Alunos</div>
             </div>
           </div>

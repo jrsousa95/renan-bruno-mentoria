@@ -52,7 +52,7 @@ const BonusSection = () => {
             <div className="mt-8 p-6 bg-yellow-400/20 rounded-xl border border-yellow-400/30">
               <div className="text-center">
                 <div className="text-sm text-yellow-400 font-semibold mb-1">
-                  VALOR TOTAL DOS BÔNUS
+                  VALOR TOTAL DO BÔNUS
                 </div>
                 <div className="text-3xl font-bold text-yellow-400">R$ 149</div>
                 <div className="text-sm text-gray-300 mt-1">

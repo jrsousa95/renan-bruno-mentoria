@@ -5,7 +5,7 @@ const CTASection = () => {
   const [isHovered, setIsHovered] = useState(false);
 
   const stats = [
-    { icon: Users, value: "5.000+", label: "Alunos Transformados" },
+    { icon: Users, value: "100+", label: "Alunos Transformados" },
     { icon: Star, value: "4.9/5", label: "Avaliação Média" },
     { icon: TrendingUp, value: "+65%", label: "Aumento Médio Vendas" },
     { icon: Clock, value: "16", label: "Semanas de Conteúdo" },
@@ -46,7 +46,7 @@ const CTASection = () => {
         {/* Main CTA */}
         <div className="text-center max-w-4xl mx-auto">
           <h2 className="text-4xl md:text-6xl font-bold mb-6">
-            Garante sua <span className="text-yellow-400">Vaga Agora</span>
+            Garanta sua <span className="text-yellow-400">Vaga Agora</span>
           </h2>
           <p className="text-xl md:text-2xl text-brand-blue-100 mb-8 leading-relaxed">
             Transforme suas vendas e multiplique seus resultados com nossa

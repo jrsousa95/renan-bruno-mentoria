@@ -33,25 +33,35 @@ const Header = () => {
       <nav className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center">
-            <img
-              src={isScrolled ? logoInverter : logo}
-              alt="Renan Bruno - Logo"
-              className="h-10 w-auto"
-            />
+            <a href="/">
+              <img
+                src={isScrolled ? logoInverter : logo}
+                alt="Renan Bruno - Logo"
+                className="h-10 w-auto"
+              />
+            </a>
           </div>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
             <button
-              onClick={() => scrollToSection("sobre")}
+              onClick={() => scrollToSection("about-mentoring")}
               className={`${
                 isScrolled ? "text-brand-gray-700" : "text-white"
               } hover:text-brand-blue-600 transition-colors`}
             >
-              Sobre
+              Sobre a Mentoria
             </button>
             <button
-              onClick={() => scrollToSection("beneficios")}
+              onClick={() => scrollToSection("about-me")}
+              className={`${
+                isScrolled ? "text-brand-gray-700" : "text-white"
+              } hover:text-brand-blue-600 transition-colors`}
+            >
+              Quem é Renan Bruno?
+            </button>
+            <button
+              onClick={() => scrollToSection("benefits")}
               className={`${
                 isScrolled ? "text-brand-gray-700" : "text-white"
               } hover:text-brand-blue-600 transition-colors`}
@@ -59,7 +69,7 @@ const Header = () => {
               Benefícios
             </button>
             <button
-              onClick={() => scrollToSection("modulos")}
+              onClick={() => scrollToSection("modules")}
               className={`${
                 isScrolled ? "text-brand-gray-700" : "text-white"
               } hover:text-brand-blue-600 transition-colors`}
@@ -67,7 +77,7 @@ const Header = () => {
               Módulos
             </button>
             <button
-              onClick={() => scrollToSection("depoimentos")}
+              onClick={() => scrollToSection("testimonials")}
               className={`${
                 isScrolled ? "text-brand-gray-700" : "text-white"
               } hover:text-brand-blue-600 transition-colors`}
@@ -103,10 +113,16 @@ const Header = () => {
         >
           <div className="py-4 space-y-4">
             <button
-              onClick={() => scrollToSection("sobre")}
+              onClick={() => scrollToSection("about-mentoring")}
               className="block w-full text-left text-brand-gray-700 hover:text-brand-blue-600 transition-colors"
             >
-              Sobre
+              Sobre a Mentoria
+            </button>
+            <button
+              onClick={() => scrollToSection("about-me")}
+              className="block w-full text-left text-brand-gray-700 hover:text-brand-blue-600 transition-colors"
+            >
+              Quem é Renan Bruno?
             </button>
             <button
               onClick={() => scrollToSection("beneficios")}

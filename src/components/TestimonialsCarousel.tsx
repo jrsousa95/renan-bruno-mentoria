@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight, Star } from "lucide-react";
+import { useEffect, useState } from "react";
 
 const TestimonialsCarousel = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -18,7 +18,7 @@ const TestimonialsCarousel = () => {
       name: "Ana Silva",
       position: "Fundadora, Marketing Pro",
       image:
-        "https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300&q=80",
+        "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&h=300&q=80",
       quote:
         "A mentoria mudou completamente minha abordagem de vendas. Agora fecho negócios que antes pareciam impossíveis.",
       rating: 5,
@@ -72,7 +72,7 @@ const TestimonialsCarousel = () => {
 
   return (
     <section
-      id="depoimentos"
+      id="testimonials"
       className="py-20 bg-gradient-to-br from-brand-gray-50 to-brand-blue-50"
     >
       <div className="container mx-auto px-4">

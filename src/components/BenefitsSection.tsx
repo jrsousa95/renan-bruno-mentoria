@@ -68,7 +68,7 @@ const BenefitsSection = () => {
 
   return (
     <section
-      id="beneficios"
+      id="benefits"
       ref={sectionRef}
       className="py-20 bg-gradient-to-br from-gray-50 to-white"
     >

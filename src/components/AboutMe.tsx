@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
-import { CheckCircle, Play, Clock, Users } from "lucide-react";
+import { CheckCircle, DollarSign, Play, Clock, Users } from "lucide-react";
+import profile from "@/assets/profile.png";
 
 const AboutMe = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -35,19 +36,19 @@ const AboutMe = () => {
     {
       icon: Clock,
       title: "+10 anos de experiência",
-      description:
-        "Renan Bruno tem mais de 10 anos de experiência em vendas de planos de saúde.",
+      description: "Renan tem mais de 10 anos de experiência em vendas.",
     },
 
     {
-      icon: CheckCircle,
-      title: "Prêmios conquistados",
-      description: "Mais de 10 prêmios em vendas e atendimento ao cliente.",
+      icon: DollarSign,
+      title: "+500.000 em vendas",
+      description:
+        "Renan já gerou mais de meio milhão em vendas de planos de saúde.",
     },
   ];
 
   return (
-    <section id="sobre" ref={sectionRef} className="py-20 bg-white">
+    <section id="about-me" ref={sectionRef} className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
           {/* Content */}
@@ -98,14 +99,14 @@ const AboutMe = () => {
               })}
             </div>
 
-            <div className="pt-6">
+            {/* <div className="pt-6">
               <button
                 onClick={() => scrollToSection("cta")}
                 className="bg-brand-blue-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-brand-blue-700 transform hover:scale-105 transition-all duration-300 shadow-lg"
               >
                 Começar Agora
               </button>
-            </div>
+            </div> */}
           </div>
 
           {/* Image */}
@@ -117,15 +118,15 @@ const AboutMe = () => {
           >
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <img
-                src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                alt="Mentoria de vendas online"
-                className="w-full h-96 object-cover"
+                src={profile}
+                alt="Renan Bruno"
+                className="w-full h-120 object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-tr from-brand-blue-600/20 to-transparent"></div>
             </div>
 
             {/* Floating elements */}
-            <div className="absolute -top-4 -right-4 bg-white rounded-xl p-4 shadow-lg">
+            {/* <div className="absolute -top-4 -right-4 bg-white rounded-xl p-4 shadow-lg">
               <div className="text-2xl font-bold text-brand-blue-600">98%</div>
               <div className="text-sm text-brand-gray-600">Satisfação</div>
             </div>
@@ -133,7 +134,7 @@ const AboutMe = () => {
             <div className="absolute -bottom-4 -left-4 bg-white rounded-xl p-4 shadow-lg">
               <div className="text-2xl font-bold text-green-600">+5.000</div>
               <div className="text-sm text-brand-gray-600">Alunos</div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
