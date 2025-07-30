@@ -84,7 +84,9 @@ const HeroSection = () => {
         onClick={() => scrollToSection("cta")}
         className="fixed bottom-6 right-6 bg-brand-blue-600 text-white px-6 py-3 rounded-full shadow-lg hover:bg-brand-blue-700 transform hover:scale-110 transition-all duration-300 z-40 font-semibold"
       >
-        Comprar agora
+        <a target="_blank" href="https://pay.kiwify.com.br/tt552DZ">
+          Comprar agora
+        </a>
       </button>
     </section>
   );
