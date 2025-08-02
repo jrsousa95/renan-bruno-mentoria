@@ -61,7 +61,7 @@ const CTASection = () => {
                 OFERTA ESPECIAL
               </div>
               <div className="text-sm text-brand-blue-200 line-through mb-1">
-                De R$ 295
+                De R$ 394
               </div>
               <div className="text-4xl font-bold text-yellow-400 mb-2">
                 R$ 197
