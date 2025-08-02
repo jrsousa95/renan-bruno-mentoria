@@ -7,7 +7,6 @@ const BonusSection = () => {
       icon: BookOpen,
       title: "PDF com ferramentas práticas",
       description: "Aprenda com o guia completo de ferramentas práticas",
-      value: "R$ 149",
     },
   ];
 
@@ -20,7 +19,7 @@ const BonusSection = () => {
             <div className="flex items-center mb-8">
               <Gift className="w-8 h-8 text-yellow-400 mr-3" />
               <h2 className="text-3xl md:text-4xl font-bold">
-                Bônus Exclusivos
+                Bônus Exclusivo
               </h2>
             </div>
 
@@ -40,16 +39,13 @@ const BonusSection = () => {
                         {bonus.title}
                       </h3>
                       <p className="text-gray-300 mb-2">{bonus.description}</p>
-                      <span className="text-yellow-400 font-semibold">
-                        Valor: {bonus.value}
-                      </span>
                     </div>
                   </div>
                 );
               })}
             </div>
 
-            <div className="mt-8 p-6 bg-yellow-400/20 rounded-xl border border-yellow-400/30">
+            {/* <div className="mt-8 p-6 bg-yellow-400/20 rounded-xl border border-yellow-400/30">
               <div className="text-center">
                 <div className="text-sm text-yellow-400 font-semibold mb-1">
                   VALOR TOTAL DO BÔNUS
@@ -59,7 +55,7 @@ const BonusSection = () => {
                   Grátis para você!
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
 
           {/* Guarantee */}
