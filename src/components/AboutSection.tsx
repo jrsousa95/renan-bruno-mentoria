@@ -114,7 +114,7 @@ const AboutSection = () => {
               <img
                 src={mentoringImage}
                 alt="Mentoria de vendas online"
-                className="w-full h-96 object-cover"
+                className="w-full h-96 lg:h-[550px] object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-tr from-brand-blue-600/20 to-transparent"></div>
             </div>

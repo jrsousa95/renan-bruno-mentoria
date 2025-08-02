@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { CheckCircle, DollarSign, Play, Clock, Users } from "lucide-react";
-import profile from "@/assets/profile.png";
+import profile from "@/assets/who-is-it.jpg";
 
 const AboutMe = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -24,13 +24,6 @@ const AboutMe = () => {
 
     return () => observer.disconnect();
   }, []);
-
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
 
   const features = [
     {
@@ -98,15 +91,6 @@ const AboutMe = () => {
                 );
               })}
             </div>
-
-            {/* <div className="pt-6">
-              <button
-                onClick={() => scrollToSection("cta")}
-                className="bg-brand-blue-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-brand-blue-700 transform hover:scale-105 transition-all duration-300 shadow-lg"
-              >
-                Começar Agora
-              </button>
-            </div> */}
           </div>
 
           {/* Image */}
@@ -120,21 +104,10 @@ const AboutMe = () => {
               <img
                 src={profile}
                 alt="Renan Bruno"
-                className="w-full h-120 object-cover"
+                className="w-full h-[750px] object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-tr from-brand-blue-600/20 to-transparent"></div>
             </div>
-
-            {/* Floating elements */}
-            {/* <div className="absolute -top-4 -right-4 bg-white rounded-xl p-4 shadow-lg">
-              <div className="text-2xl font-bold text-brand-blue-600">98%</div>
-              <div className="text-sm text-brand-gray-600">Satisfação</div>
-            </div>
-
-            <div className="absolute -bottom-4 -left-4 bg-white rounded-xl p-4 shadow-lg">
-              <div className="text-2xl font-bold text-green-600">+5.000</div>
-              <div className="text-sm text-brand-gray-600">Alunos</div>
-            </div> */}
           </div>
         </div>
       </div>
