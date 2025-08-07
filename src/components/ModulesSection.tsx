@@ -77,7 +77,10 @@ const ModulesSection = () => {
                   <div className="flex items-center space-x-6 text-brand-gray-600">
                     <div className="flex items-center space-x-2">
                       <PlayCircle className="w-4 h-4" />
-                      <span className="text-sm">{module.lessons} aulas</span>
+                      <span className="text-sm">
+                        {module.lessons}{" "}
+                        {module.lessons === 1 ? "aula" : "aulas"}
+                      </span>
                     </div>
                   </div>
                 </div>
