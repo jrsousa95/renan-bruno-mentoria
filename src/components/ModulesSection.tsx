@@ -36,7 +36,7 @@ const ModulesSection = () => {
     },
     {
       title: "Módulo 4: Encerramento",
-      lessons: 8,
+      lessons: 1,
       description: "Encerramento do curso.",
       topics: ["Encerramento"],
     },

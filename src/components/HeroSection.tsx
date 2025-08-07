@@ -46,7 +46,7 @@ const HeroSection = () => {
             className="text-xl md:text-2xl lg:text-3xl font-semibold mb-4 animate-fade-in"
             style={{ animationDelay: "0.2s" }}
           >
-            Método comprovado de quem já formou dezenas de campeões em vendas
+            Método comprovado de quem já formou centenas de campeões em vendas
           </h2>
           <p
             className="text-lg md:text-xl text-gray-300 mb-8 max-w-3xl mx-auto animate-fade-in"

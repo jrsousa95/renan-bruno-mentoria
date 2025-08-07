@@ -43,7 +43,7 @@ const AboutSection = () => {
     {
       icon: CheckCircle,
       title: "Expertise de mercado ",
-      description: "Aprenda com quem já formou dezenas de campeões em vendas.",
+      description: "Aprenda com quem já formou centenas de campeões em vendas.",
     },
   ];
 
@@ -126,7 +126,7 @@ const AboutSection = () => {
             </div>
 
             <div className="absolute -bottom-4 -left-4 bg-white rounded-xl p-4 shadow-lg">
-              <div className="text-2xl font-bold text-green-600">+100</div>
+              <div className="text-2xl font-bold text-green-600">+300</div>
               <div className="text-sm text-brand-gray-600">Alunos</div>
             </div>
           </div>

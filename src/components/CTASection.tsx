@@ -5,7 +5,7 @@ const CTASection = () => {
   const [isHovered, setIsHovered] = useState(false);
 
   const stats = [
-    { icon: Users, value: "100+", label: "Alunos Transformados" },
+    { icon: Users, value: "300+", label: "Alunos Transformados" },
     { icon: Star, value: "4.9/5", label: "Avaliação Média" },
     { icon: TrendingUp, value: "+65%", label: "Aumento Médio Vendas" },
     { icon: Clock, value: "3", label: "Meses de acesso" },
